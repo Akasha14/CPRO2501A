@@ -8,10 +8,28 @@ body {
   height: 100vh;
 }
 
+.form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   margin-bottom: 40px;
   font-size: 40px;
   color: #333;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
 }
 
 label {
@@ -20,11 +38,31 @@ label {
   color: #000000;
 }
 
-button {
-  margin-top: 4px;
+select {
+  width: 100%;
   padding: 10px;
-  background-color: #036f7e;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="number"] {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  width: 35%;
+  padding: 12px;
+  background-color: #4caf50;
   color: white;
+  font-size: 18px;
   border-radius: 4px;
   cursor: pointer;
 }

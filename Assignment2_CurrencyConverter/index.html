@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="site.css" />
   </head>
   <body>
-    <h2>Currency Converter</h2>
-    <label for="base">Base Currency:</label>
-    <input type="text" id="base" placeholder="USD" />
-    <label for="target">Target Currency:</label>
-    <input type="text" id="target" placeholder="EUR" />
-    <label for="amount">Amount:</label>
-    <input type="number" id="amount" placeholder="100" />
-    <button onclick="convertCurrency()">Convert</button>
-    <p id="result"></p>
+    <h1 class="title">Currency Converter</h1>
+    <div class="form">
+      <!-- Dropdowns, filled dynamically at runtime by Javascript.  -->
+      <label for="base">Base Currency:</label>
+      <select id="base">
+        <!-- To be filled  -->
+      </select>
+
+      <label for="target">Target Currency:</label>
+      <select id="target">
+        <!-- To be filled  -->
+      </select>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" placeholder="100" />
+
+      <!-- Convert Button -->
+      <button onclick="convertCurrency()">Convert</button>
+
+      <p id="result"></p>
+    </div>
 
     <script src="currencyConvert.js"></script>
   </body>
